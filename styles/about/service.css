@@ -1,0 +1,61 @@
+/* styling for the service container */
+.service_container {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* style of the individual cards */
+.service_card {
+  box-shadow: 0px 0px 3px 1.2px rgb(var(--gray-700));
+  background: rgb(var(--gray-100), 0.02);
+  border-radius: 0.6rem;
+  position: relative;
+  height: 16rem;
+  width: 23rem;
+  transition: 0.25s ease-out;
+}
+
+/* To increase the opacity of the glowing effect when the card is hovered */
+.service_card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 1.2px rgb(var(--gray-700));
+}
+
+/* styling for the glowing effect on the cards */
+.service_card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgb(var(--gray-100), 0.1),
+    transparent 40%
+  );
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  opacity: var(--before_opacity, 0);
+  transition: opacity 500ms;
+}
+
+/* for phone devices and smaller */
+@media (max-width: 630px) {
+  .service_container {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service_card {
+    width: 80vw;
+    height: 20vh;
+  }
+}

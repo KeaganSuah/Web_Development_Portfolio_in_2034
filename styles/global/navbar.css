@@ -94,8 +94,8 @@
 }
 
 /* button to change colour theme */
-.navlinks li i {
-  color: rgb(var(--gray-100));
+#theme {
+  color: rgb(var(--gray-300));
   font-size: var(--font-size-xl);
   padding: 0.5rem;
   border-radius: 50%;
@@ -105,9 +105,9 @@
 }
 
 /* button to change colour theme hover effect */
-.navlinks li i:hover {
-  color: rgb(var(--gray-800));
-  background: rgb(var(--gray-100));
+#theme:hover {
+  color: rgb(var(--gray-100));
+  background: rgb(var(--gray-600));
 }
 
 /* Design and size of the menu bar icon for reponsiveness, currently invisible */

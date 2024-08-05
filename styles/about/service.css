@@ -17,13 +17,49 @@
   position: relative;
   height: 16rem;
   width: 23rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
   transition: 0.25s ease-out;
 }
 
+/* styling for icons for the service cards */
+.service_card i {
+  font-size: var(--font-size-7xl);
+  background: linear-gradient(
+    10deg,
+    rgb(var(--blue-400)),
+    rgb(var(--gray-100))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* styling for the title for the service cards */
+.service_card h3 {
+  color: rgb(var(--gray-200));
+  font-size: var(--font-size-2xl);
+  font-weight: 500;
+  padding: 0.8rem 0.5rem 0.2rem;
+}
+
+/* styling for the descriptions for the service cards */
+.service_card p {
+  color: rgb(var(--gray-400));
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  font-weight: 300;
+  padding: 0 0.5rem;
+}
+
 /* To increase the opacity of the glowing effect when the card is hovered */
-.service_card:hover {
-  transform: scale(1.02);
+.service_card:hover,
+.service_card:focus {
+  transform: translateY(-3%);
   box-shadow: 0px 0px 10px 1.2px rgb(var(--gray-700));
+  transition-delay: none;
 }
 
 /* styling for the glowing effect on the cards */
@@ -45,6 +81,23 @@
   transition: opacity 500ms;
 }
 
+/* styling for delay for the cards */
+.moveUp:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.moveUp:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.moveUp:nth-child(5) {
+  transition-delay: 200ms;
+}
+
+.moveUp:nth-child(6) {
+  transition-delay: 400ms;
+}
+
 /* for phone devices and smaller */
 @media (max-width: 630px) {
   .service_container {
@@ -57,5 +110,22 @@
   .service_card {
     width: 80vw;
     height: 20vh;
+  }
+
+  /* remove all delay for the cards */
+  .moveUp:nth-child(2) {
+    transition-delay: none;
+  }
+
+  .moveUp:nth-child(3) {
+    transition-delay: none;
+  }
+
+  .moveUp:nth-child(5) {
+    transition-delay: none;
+  }
+
+  .moveUp:nth-child(6) {
+    transition-delay: none;
   }
 }

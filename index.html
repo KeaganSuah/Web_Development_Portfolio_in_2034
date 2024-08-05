@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/styles/global/navbar.css" />
     <link rel="stylesheet" href="/styles/global/footer.css" />
     <link rel="stylesheet" href="/styles/global/hero.css" />
+    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" />
 
     <!-- Page Styles -->
     <link rel="stylesheet" href="/styles/home/summary.css" />
@@ -31,7 +32,7 @@
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header class="navbar">
+    <header class="navbar moveDown">
       <!-- Logo -->
       <a href="/" class="logo"> Kea<span>gan</span> </a>
 
@@ -56,41 +57,32 @@
     <main>
       <section class="hero"></section>
       <article class="summary">
-        <h2 class="section_title">Why Me?</h2>
+        <h2 class="section_title fadeUp">Why Me?</h2>
         <section class="summary_container">
-          <div class="summary_card large">
-            <h4>
-              Learn from <br />
-              <mark class="underlined-text">Industry Leaders.</mark>
-            </h4>
-            <p>
-              All of our courses are from seasoned veterans with a passion for
-              teaching. This includes lecturers that are senior developers from
-              companies such as:
-            </p>
-            <ul>
-              <li>Amazon</li>
-              <li>Microsoft</li>
-            </ul>
-            <p>...and many more.</p>
-          </div>
-          <div class="summary_card">
-            <span> 500+ </span>
-            <p>hours of content.</p>
-          </div>
-          <div class="summary_card">
-            <h4 class="home-why-in-demand__text">
-              Learn the most in demand technologies.
-            </h4>
-          </div>
-          <div class="summary_card">
-            <h5 class="home-why-up-to-date__text">Always up to date.</h5>
-          </div>
-          <div class="summary_card medium">
-            <h4 class="home-why-in-demand__text">
-              Learn the most in demand technologies.
-            </h4>
-          </div>
+          <a href="/portfolio.html" class="summary_card large moveUp">
+            <h3>Featured Projects</h3>
+            <h6>View All ></h6>
+          </a>
+          <a href="/about.html" class="summary_card moveUp">
+            <h4>500+</h4>
+            <p>Hours of Coding</p>
+          </a>
+          <a href="/about.html" class="summary_card moveUp">
+            <h4>100+</h4>
+            <p>Completed Projects</p>
+          </a>
+          <a href="/about.html" class="summary_card moveUp">
+            <h4>6<span>years</span></h4>
+            <p>Coding Experience</p>
+          </a>
+          <a href="/about.html" class="summary_card medium moveUp">
+            <h3>Trusted By</h3>
+            <figure class="image_container">
+              <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
+              <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
+              <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
+            </figure>
+          </a>
         </section>
       </article>
     </main>
@@ -177,6 +169,7 @@
     <script src="/scripts/global/navbar.js"></script>
     <script src="/scripts/global/glow.js"></script>
     <script src="/scripts/global/changeMode.js"></script>
+    <script src="/scripts/global/scrollAnimation.js"></script>
 
     <!-- Page Scripts -->
     <script src="/scripts/home/summary.js"></script>

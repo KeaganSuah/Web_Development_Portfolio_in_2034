@@ -23,12 +23,16 @@
     <link rel="stylesheet" href="/styles/global/navbar.css" />
     <link rel="stylesheet" href="/styles/global/footer.css" />
     <link rel="stylesheet" href="/styles/global/hero.css" />
+    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" />
+
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="/styles/blog/blog.css" />
 
     <title>Document</title>
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header class="navbar">
+    <header class="navbar moveDown">
       <!-- Logo -->
       <a href="/" class="logo"> Kea<span>gan</span> </a>
 
@@ -54,7 +58,7 @@
       <!-- Start of Hero section for about page -->
       <section class="hero">
         <div class="hero_container">
-          <div class="description">
+          <div class="description fadeLeft delay_2">
             <h1>blog</h1>
             <h2>I'm a product designer based in sunny Sydney, Australia.</h2>
             <p>
@@ -63,12 +67,43 @@
               you'll find me cooking, gardening or working out in the park.
             </p>
           </div>
-          <figure>
+          <figure class="fadeRight delay_2">
             <img src="/static/about/hero/hero.PNG" alt="" />
           </figure>
         </div>
       </section>
       <!-- End hero section -->
+
+      <!-- collections of my blogs -->
+      <article class="fade">
+        <h2 class="section_title">My blogs</h2>
+        <!-- section that contains a single blog post -->
+        <section class="blog_container">
+          <!-- blog post image to capture attention -->
+          <figure class="blog_image">
+            <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
+          </figure>
+          <!-- caption for the post, such as the title and description of the blog post -->
+          <figcaption>
+            <h3>10 best Figma plugins for web design in 2024</h3>
+            <p>
+              A step by step guide to build a design system with predefined
+              styles, a component library, and usage guidelines.
+            </p>
+            <!-- my icon, as well as my name and date to show that I posted the blog -->
+            <div class="icon_container">
+              <figure class="icon_image">
+                <img src="/static/global/icon.png" alt="" />
+              </figure>
+              <div class="details">
+                <h4>Keagan Suah</h4>
+                <span>26 July 2024</span>
+              </div>
+            </div>
+          </figcaption>
+        </section>
+      </article>
+      <!-- End of collection of blogs -->
     </main>
     <!-- End of main contents -->
 
@@ -153,6 +188,7 @@
     <script src="/scripts/global/navbar.js"></script>
     <script src="/scripts/global/glow.js"></script>
     <script src="/scripts/global/changeMode.js"></script>
+    <script src="/scripts/global/scrollAnimation.js"></script>
 
     <!-- Page Scripts -->
   </body>

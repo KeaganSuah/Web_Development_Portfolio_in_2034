@@ -76,7 +76,7 @@
 
 /* Styling the position */
 .journey_card h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: var(--font-size-2xl);
   color: rgb(var(--gray-100));
 }
@@ -84,7 +84,7 @@
 /* Styling the company name */
 .journey_card h4 {
   margin-top: 0.2rem;
-  font-weight: 400;
+  font-weight: 300;
   font-size: var(--font-size-xl);
   color: rgb(var(--gray-400));
 }

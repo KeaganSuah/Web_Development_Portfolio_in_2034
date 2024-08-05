@@ -22,3 +22,11 @@
   color: rgb(var(--gray-100));
   background: rgb(var(--gray-700));
 }
+
+/* increase button size for smaller devices */
+@media (max-width: 550px) {
+  .hero_container .description a {
+    font-size: var(--font-size-m);
+    width: 45%;
+  }
+}

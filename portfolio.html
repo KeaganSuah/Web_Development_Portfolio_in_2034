@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/styles/global/navbar.css" />
     <link rel="stylesheet" href="/styles/global/footer.css" />
     <link rel="stylesheet" href="/styles/global/hero.css" />
+    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" />
 
     <!-- Page Style -->
     <link rel="stylesheet" href="/styles/portfolio/portfolio.css" />
@@ -32,7 +33,7 @@
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header class="navbar">
+    <header class="navbar moveDown">
       <!-- Logo -->
       <a href="/" class="logo"> Kea<span>gan</span> </a>
 
@@ -58,12 +59,12 @@
       <!-- Start of Hero section for about page -->
       <section class="hero">
         <div class="hero_container">
-          <div class="description">
+          <div class="description fadeLeft delay_2">
             <h1>portfolio</h1>
             <h2>I'm a product designer based in sunny Sydney, Australia.</h2>
             <a href="#">Visit Github</a>
           </div>
-          <figure>
+          <figure class="fadeRight delay_2">
             <img src="/static/about/hero/hero.PNG" alt="" />
           </figure>
         </div>
@@ -71,78 +72,102 @@
       <!-- End hero section -->
 
       <article>
-        <h2 class="section_title">My Work</h2>
+        <h2 class="section_title fadeUp">My Work</h2>
         <section class="portfolio_container">
-          <div class="portfolio_card">
+          <div class="portfolio_card moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
-          <div class="portfolio_card">
+          <div class="portfolio_card moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
-          <div class="portfolio_card">
+          <div class="portfolio_card moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
-          <div class="portfolio_card large">
+          <div class="portfolio_card large moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
-          <div class="portfolio_card">
+          <div class="portfolio_card moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
-          <div class="portfolio_card">
+          <div class="portfolio_card moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
-          <div class="portfolio_card large">
+          <div class="portfolio_card large moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
-          <div class="portfolio_card">
+          <div class="portfolio_card moveUp">
             <figure>
               <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
             </figure>
             <figcaption>
               <h3>AI Lab Granada</h3>
-              <span> Web Development </span>
+              <div class="hover_container">
+                <span> Web Development </span>
+                <span> Show Project ------ </span>
+              </div>
             </figcaption>
           </div>
         </section>
@@ -231,6 +256,7 @@
     <script src="/scripts/global/navbar.js"></script>
     <script src="/scripts/global/glow.js"></script>
     <script src="/scripts/global/changeMode.js"></script>
+    <script src="/scripts/global/scrollAnimation.js"></script>
 
     <!-- Page Scripts -->
     <script src="/scripts/portfolio/portfolio.js"></script>

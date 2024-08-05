@@ -1,0 +1,69 @@
+/* fade in from bottom animation */
+.fade {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 0.75s;
+}
+
+.fadeUp {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(25%);
+  transition: all 0.5s;
+}
+
+.moveUp {
+  transform: translateY(25%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.fadeLeft {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  transition: all 0.75s;
+}
+
+.fadeRight {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(50%);
+  transition: all 0.75s;
+}
+
+.moveDown {
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+/* Delay transitions classes */
+.delay_1 {
+  transition-delay: 400ms;
+}
+
+.delay_2 {
+  transition-delay: 600ms;
+}
+
+.delay_3 {
+  transition-delay: 800ms;
+}
+
+/* for users that prefer not to have animation, it will have no transitions */
+@media (prefers-reduced-motion) {
+  .fade {
+    transition: none;
+  }
+
+  .fadeUp {
+    transition: none;
+  }
+}
+
+/* Used to show the element, for all, even fade in, slide in etc */
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}

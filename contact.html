@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/styles/global/navbar.css" />
     <link rel="stylesheet" href="/styles/global/footer.css" />
     <link rel="stylesheet" href="/styles/global/hero.css" />
+    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" />
 
     <!-- Page Styles -->
     <link rel="stylesheet" href="/styles/contact/hero.css" />
@@ -32,7 +33,7 @@
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header class="navbar">
+    <header class="navbar moveDown">
       <!-- Logo -->
       <a href="/" class="logo"> Kea<span>gan</span> </a>
 
@@ -58,7 +59,7 @@
       <!-- Start of Hero section for contact page -->
       <section class="hero">
         <div class="hero_container">
-          <div class="description">
+          <div class="description fadeLeft delay_2">
             <h1>contact</h1>
             <h2>I'm a product designer based in sunny Sydney, Australia.</h2>
             <div class="social_media_container">
@@ -80,7 +81,7 @@
               </a>
             </div>
           </div>
-          <figure>
+          <figure class="fadeRight delay_2">
             <img src="/static/about/hero/hero.PNG" alt="" />
           </figure>
         </div>
@@ -89,27 +90,53 @@
 
       <!-- forms section -->
       <article>
-        <h2 class="section_title">Message Me</h2>
-        <section class="container">
-          <form id="form" action="/contact.html">
+        <h2 class="section_title fadeUp">Message Me</h2>
+        <!-- form container for inputs and message area -->
+        <form id="form" action="/contact.html">
+          <!-- container on the left, for name and email request imput -->
+          <div class="left_container fadeLeft">
+            <!-- takes user input for name -->
             <div class="input-control">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+              />
               <div class="error"></div>
             </div>
+            <!-- takes user input for email -->
             <div class="input-control">
               <label for="email">Email</label>
-              <input type="email" id="name" name="name" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
               <div class="error"></div>
             </div>
+          </div>
+          <!-- container on the right, for message and for the button input -->
+          <div class="right_container fadeRight delay_1">
+            <!-- takes user input for message-->
             <div class="input-control">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                name="message"
+                cols="10"
+                rows="7"
+                placeholder="Your Message"
+              ></textarea>
               <div class="error"></div>
             </div>
+            <!-- takes user input for submission -->
             <button type="submit">Send</button>
-          </form>
-        </section>
+          </div>
+        </form>
       </article>
     </main>
     <!-- End of main contents -->
@@ -195,6 +222,7 @@
     <script src="/scripts/global/navbar.js"></script>
     <script src="/scripts/global/glow.js"></script>
     <script src="/scripts/global/changeMode.js"></script>
+    <script src="/scripts/global/scrollAnimation.js"></script>
 
     <!-- Page Scripts -->
     <script src="/scripts/contact/form.js"></script>

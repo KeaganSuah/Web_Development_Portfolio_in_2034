@@ -20,18 +20,12 @@ footer {
 }
 
 /* flex container for top and bottom section */
-.footer-top-section,
-.footer-bottom-section {
+.footer-top-section {
   align-items: flex-start;
   gap: 4rem;
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
-}
-
-/* gap between footer bottom */
-.footer-bottom-section {
-  gap: 1.4rem;
 }
 
 /* title for nav links in footer at top-right */
@@ -79,7 +73,7 @@ footer {
 .footer-bottom {
   margin-top: 4rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -118,6 +112,7 @@ footer {
 .social-media-links a:focus {
   color: rgb(var(--gray-900));
   background: rgb(var(--gray-200));
+  outline: none;
 }
 
 /* Copyright styling */

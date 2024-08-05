@@ -64,7 +64,7 @@
 }
 
 /* Media for tablet and phones */
-@media (max-width: 1024px) {
+@media (max-width: 1064px) {
   /* adjust the container by pushing the image below the description */
   .hero_container {
     flex-direction: column;

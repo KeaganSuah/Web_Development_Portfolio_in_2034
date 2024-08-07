@@ -96,11 +96,37 @@
   font-size: var(--font-size-m);
   color: rgb(var(--gray-300));
   line-height: var(--line-height-m);
+  padding-bottom: 1rem;
 }
 
-/* styling the link to read more */
-.journey_card a {
-  text-decoration: none;
+/* read more content to hide first when user have not click */
+.read_more {
+  display: block;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
+/* to load the read more when the user clicked on the card to list out more content */
+.read_more_more {
+  display: block;
+  opacity: 1;
+  height: 5rem;
+}
+
+/* styling the status read more/read less text*/
+.status {
+  color: rgb(var(--gray-400));
+  font-size: var(--font-size-s);
+  font-weight: 300;
+  transition: 0.5s ease;
+}
+
+/* styling the status hover effect to enlarge the read more/read less text */
+.journey_card:hover .status {
+  color: rgb(var(--gray-200));
+  font-size: var(--font-size-m);
+  font-weight: 400;
 }
 
 /* styling the date */

@@ -13,6 +13,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 /* Styling for the description section in the hero */
@@ -81,5 +82,23 @@
   /* let the hero section height auto reset based on media height */
   .hero {
     height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero_container .description h1 {
+    font-size: var(--font-size-6xl);
+  }
+
+  /* styling description sub header */
+  .hero_container .description h2 {
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+  }
+
+  /* styling description section of small description, if the page has it */
+  .hero_container .description p {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-m);
   }
 }

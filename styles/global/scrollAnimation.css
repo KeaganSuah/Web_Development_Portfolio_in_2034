@@ -1,10 +1,11 @@
-/* fade in from bottom animation */
+/* fade in animation */
 .fade {
   opacity: 0;
   filter: blur(5px);
   transition: all 0.75s;
 }
 
+/* fade in animation from bottom to top*/
 .fadeUp {
   opacity: 0;
   filter: blur(5px);
@@ -12,12 +13,22 @@
   transition: all 0.5s;
 }
 
+/* fade in animation from top to bottom*/
+.fadeDown {
+  transform: translateY(-50%);
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 0.8s;
+}
+
+/* move in animation from bottom to top*/
 .moveUp {
   transform: translateY(25%);
   opacity: 0;
   transition: all 0.5s;
 }
 
+/* fade in animation from left to right*/
 .fadeLeft {
   opacity: 0;
   filter: blur(5px);
@@ -25,6 +36,7 @@
   transition: all 0.75s;
 }
 
+/* fade in animation from right to left*/
 .fadeRight {
   opacity: 0;
   filter: blur(5px);
@@ -32,6 +44,7 @@
   transition: all 0.75s;
 }
 
+/* move in animation from top to bottom*/
 .moveDown {
   transform: translateY(-100%);
   transition: all 1s;

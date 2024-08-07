@@ -27,6 +27,6 @@
 @media (max-width: 550px) {
   .hero_container .description a {
     font-size: var(--font-size-m);
-    width: 45%;
+    width: 55%;
   }
 }

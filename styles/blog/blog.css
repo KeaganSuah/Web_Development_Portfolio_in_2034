@@ -42,17 +42,17 @@
 /* style the title of the blog */
 .blog_container figcaption h3 {
   color: rgb(var(--gray-200));
-  font-size: var(--font-size-6xl);
+  font-size: var(--font-size-5xl);
   font-weight: 400;
-  line-height: var(--line-height-6xl);
+  line-height: var(--line-height-5xl);
 }
 
 /* style the description of the blog */
 .blog_container figcaption p {
   color: rgb(var(--gray-400));
   font-weight: 300;
-  font-size: var(--font-size-2xl);
-  line-height: var(--line-height-3xl);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-2xl);
 }
 
 /* style the icon, by who which is myself and the date container */
@@ -65,8 +65,8 @@
 
 /* style of the icon container */
 .icon_image {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background-color: aliceblue;
   border-radius: 50%;
 }
@@ -89,14 +89,14 @@
 /* style of the name */
 .icon_container .details h4 {
   color: rgb(var(--gray-200));
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-l);
   font-weight: 400;
 }
 
 /* style of the date */
 .icon_container .details span {
   color: rgb(var(--gray-400));
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-m);
   font-weight: 300;
 }
 

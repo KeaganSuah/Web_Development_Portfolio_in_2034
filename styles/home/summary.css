@@ -23,11 +23,11 @@
   justify-content: center;
 }
 
-/* To scale the card size when hovered */
 .summary_card:hover,
 .summary_card:focus {
-  transform: translateY(-3%);
+  outline: none;
   box-shadow: 0px 0px 10px 1.2px rgb(var(--gray-700));
+  transform: translateY(-3%);
 }
 
 /* styling for the glowing effect on the cards */
@@ -58,19 +58,6 @@
 /* for sub-main card */
 .medium {
   grid-column: span 2;
-}
-
-/* styling for delay for the cards */
-.moveUp:nth-child(2) {
-  transition-delay: 200ms;
-}
-
-.moveUp:nth-child(5) {
-  transition-delay: 200ms;
-}
-
-.moveUp:nth-child(6) {
-  transition-delay: 400ms;
 }
 
 /* styling for header for first and last card  */
@@ -187,19 +174,6 @@
   .medium {
     grid-column: span 1;
   }
-
-  /* remove delay for the cards */
-  .moveUp:nth-child(2) {
-    transition-delay: none;
-  }
-
-  .moveUp:nth-child(5) {
-    transition-delay: none;
-  }
-
-  .moveUp:nth-child(6) {
-    transition-delay: none;
-  }
 }
 
 /* media query for phone devices */
@@ -211,7 +185,7 @@
   }
 
   .summary_card {
-    height: 30vh;
+    min-height: 30vh;
   }
 
   .image_container {

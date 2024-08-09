@@ -47,20 +47,16 @@
 
 /* style for the main title in the hero section */
 .parallax section h1 {
-  color: rgb(var(--gray-200));
+  color: rgb(229, 231, 235);
   font-size: var(--font-size-7xl);
-  text-shadow: 2px 2px 2px rgb(var(--gray-700));
+  text-shadow: 2px 2px 2px rgb(55, 65, 81);
   z-index: 2;
   font-weight: 700;
 }
 
 /* style for the sub title in the hero section */
 .parallax section h2 {
-  background: linear-gradient(
-    331deg,
-    rgb(var(--gray-200)),
-    rgb(var(--blue-500))
-  );
+  background: linear-gradient(331deg, rgb(229, 231, 235), rgb(59, 130, 246));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,10 +75,10 @@
 /* style for each letter in the opening text */
 .parallax section ul li {
   list-style: none;
-  color: rgb(var(--gray-200));
+  color: rgb(229, 231, 235);
   font-size: var(--font-size-8xl);
   font-weight: 700;
-  text-shadow: 2px 2px 2px rgb(var(--gray-700));
+  text-shadow: 2px 2px 2px rgb(55, 65, 81);
   z-index: 2;
   margin: -3px;
 }
@@ -130,9 +126,9 @@
 
 /* style for the typing animation text */
 .typing_container span {
-  color: rgb(var(--gray-200));
+  color: rgb(229, 231, 235);
   font-size: var(--font-size-7xl);
-  text-shadow: 2px 2px 2px rgb(var(--gray-700));
+  text-shadow: 2px 2px 2px rgb(55, 65, 81);
   z-index: 2;
   font-weight: 400;
   font-family: var(--font-mono);

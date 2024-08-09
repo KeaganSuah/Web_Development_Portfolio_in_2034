@@ -38,9 +38,9 @@ window.addEventListener("scroll", () => {
 const typed = new Typed(".multiple-text", {
   strings: [
     "Web Developer",
-    "lifelong Learner",
-    "Computer Student",
-    "Problem Solver",
+    "Software Engineer",
+    "AI/ML Engineer",
+    "Data Scientist",
   ],
   typeSpeed: 70,
   backSpeed: 50,

@@ -23,7 +23,7 @@
 .portfolio_card::before {
   background: radial-gradient(
     1200px circle at var(--mouse-x) var(--mouse-y),
-    rgb(var(--gray-100), 0.1),
+    rgb(var(--gray-100), 0.2),
     transparent 40%
   );
   border-radius: inherit;

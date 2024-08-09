@@ -107,3 +107,11 @@ body {
   color: rgb(var(--gray-200));
   font-size: var(--font-size-6xl);
 }
+
+/* for phone and smaller devices */
+@media (max-width: 500px) {
+  /* heading for each section */
+  .section_title {
+    font-size: var(--font-size-4xl);
+  }
+}

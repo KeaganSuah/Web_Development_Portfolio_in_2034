@@ -62,8 +62,9 @@
 
 /* styling for header for first and last card  */
 .summary_card h3 {
-  color: rgb(var(--gray-200));
+  color: rgb(var(--gray-100));
   font-size: var(--font-size-4xl);
+  text-shadow: 2px 2px 2px rgb(var(--gray-900));
   font-weight: 400;
 }
 
@@ -90,17 +91,18 @@
 
 /* styling for the view all text */
 .summary_card h6 {
-  color: rgb(var(--blue-600));
+  color: rgb(var(--gray-200));
   font-size: var(--font-size-xl);
+  text-shadow: 2px 2px 2px rgb(var(--gray-900));
   text-decoration: none;
   transition: 0.5s ease-out;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* styling for the view all text when hovered */
 .summary_card:hover h6,
 .summary_card:focus h6 {
-  color: rgb(var(--blue-300));
+  color: rgb(var(--blue-500));
 }
 
 /* styling for the small description in the cards */
@@ -112,7 +114,7 @@
 
 /* styling for the first card, making the contents in the middle with background image */
 .summary_card:nth-child(1) {
-  background: url(/static/portfolio/portfolio/portfolio1.jpg);
+  background: url(/static/home/whyme/featureDark.jpg);
   background-size: cover;
   background-position: center bottom;
   justify-content: flex-start;

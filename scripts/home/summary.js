@@ -6,8 +6,7 @@ function summaryDark(cardContainer) {
   for (const card of cardContainer) {
     card.style.background = "rgb(var(--gray-200), 0.02)";
     card.style.boxShadow = "0px 0px 3px 1.2px rgb(var(--gray-700))";
-    main_card.style.background =
-      " url(/static/portfolio/portfolio/portfolio1.jpg)";
+    main_card.style.background = " url(/static/home/whyme/featureDark.jpg)";
     main_card.style.backgroundSize = "cover";
     main_card.style.backgroundPosition = "center bottom";
     main_card.style.justifyContent = "flex-start";
@@ -20,8 +19,7 @@ function summaryLight(cardContainer) {
     card.style.background =
       "linear-gradient(331deg, rgb(var(--gray-700), 0.3), rgb(var(--gray-900)))";
     card.style.boxShadow = "0px 0px 10px 2px rgb(var(--gray-600),0.5)";
-    main_card.style.background =
-      " url(/static/portfolio/portfolio/portfolio1.jpg)";
+    main_card.style.background = " url(/static/home/whyme/featureLight.jpg)";
     main_card.style.backgroundSize = "cover";
     main_card.style.backgroundPosition = "center bottom";
     main_card.style.justifyContent = "flex-start";

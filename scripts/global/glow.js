@@ -19,10 +19,10 @@ function flexboxGlows(cardContainer) {
     card.onmousemove = (e) => glowOnMouse(e);
 
     card.addEventListener("mouseenter", function () {
+      // remove the transititon delay after the elements have shown already
+      card.style.transitionDelay = "0s";
       if (!document.body.classList.contains("light_theme")) {
         card.style.setProperty("--before_opacity", "1");
-        // remove the transititon delay after the elements have shown already
-        card.style.transitionDelay = "0s";
       }
     });
 
@@ -40,10 +40,10 @@ function gridGlows(cardContainer) {
 
     // Hover effect for the card within the container
     card.addEventListener("mouseenter", function () {
+      // remove the transititon delay after the elements have shown already
+      card.style.transitionDelay = "0s";
       if (!document.body.classList.contains("light_theme")) {
         card.style.setProperty("--before_opacity", "1");
-        // remove the transititon delay after the elements have shown already
-        card.style.transitionDelay = "0s";
       }
       // If the card is larger, increase the size of the glow
       if (card.classList.contains("large")) {

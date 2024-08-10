@@ -57,7 +57,7 @@
 
 /* style for image when card is hovered and focus */
 .portfolio_card:hover figure img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* style for the description in the cards */

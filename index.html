@@ -28,6 +28,7 @@
     <!-- Page Styles -->
     <link rel="stylesheet" href="/styles/home/summary.css" />
     <link rel="stylesheet" href="/styles/home/hero.css" />
+    <link rel="stylesheet" href="/styles/home/testimonial.css" />
 
     <title>Welcome To Keagan's Website</title>
   </head>
@@ -130,6 +131,41 @@
           </a>
         </section>
       </article>
+
+      <!-- Testimonials Begins -->
+      <article>
+        <h2 class="section_title fadeUp">Testimonial</h2>
+        <section class="testimonial_container moveUp">
+          <div class="testimonial_card" id="testimonial_card">
+            <div class="top_section">
+              <span><i class="bx bxs-quote-alt-left"></i></span>
+              <p class="testimonial_description">
+                Keagan's work as a Senior AI/ML Engineer at Apple was
+                groundbreaking. He led the development of innovative AI
+                solutions that significantly enhanced our technology offerings.
+                His leadership ensured Apple remained at the forefront of the
+                industry.
+              </p>
+            </div>
+            <div class="bottom_section">
+              <figure>
+                <img
+                  class="testimonial_image"
+                  src="/static/home/testimonial/face1.jpg"
+                  alt=""
+                />
+              </figure>
+              <figcaption>
+                <h3 class="testimonial_name">Emily Chen</h3>
+                <h4 class="testimonial_role">AI Team Lead, Apple</h4>
+              </figcaption>
+            </div>
+          </div>
+          <button id="prev"><i class="bx bxs-left-arrow"></i></button>
+          <button id="next"><i class="bx bxs-right-arrow"></i></button>
+        </section>
+      </article>
+      <!-- Testimonials Ends -->
     </main>
     <!-- End of main contents -->
 
@@ -232,5 +268,6 @@
     <!-- Page Scripts -->
     <script src="/scripts/home/summary.js"></script>
     <script src="/scripts/home/hero.js"></script>
+    <script src="/scripts/home/testimonial.js"></script>
   </body>
 </html>

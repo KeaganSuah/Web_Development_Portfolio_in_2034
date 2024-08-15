@@ -182,7 +182,7 @@
 }
 
 /* adjust for when tablets and phones */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   /* make container take 80% of screen width */
   .journey_container {
     width: 80vw;
@@ -200,6 +200,7 @@
     float: none;
     clear: none;
     margin-bottom: 80px;
+    height: auto;
   }
 
   /* allow all cards to align to the left instead of alternating */
@@ -221,5 +222,9 @@
 
   .journey_card:nth-child(even) {
     transform: translateX(0);
+  }
+
+  .read_more_more {
+    height: auto;
   }
 }

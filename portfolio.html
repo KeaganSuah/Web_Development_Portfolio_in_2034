@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
     <!-- Meta Data for the Main page, such as description and author -->
-    <meta name="keywords" content="lorem" />
-    <meta name="author" content="lorem" />
-    <meta name="description" content="lorem" />
+    <meta
+      name="keywords"
+      content="Keagan, Projects, Portfolio, Software Development, AI Projects, Web Development, Professional Work, Keagan's Portfolio"
+      >
+    <meta name="author" content="Keagan" >
+    <meta
+      name="description"
+      content="Explore Keagan's portfolio, showcasing his projects in software development, AI, and web development. Discover the work and skills of a seasoned developer."
+      >
+
+    <!--Keagan's Portfolio page title -->
+    <title>Keagan's Portfolio</title>
 
     <!-- Box Icons Import -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-    />
+      >
 
     <!-- Web Icon -->
-    <link rel="icon" sizes="512x512" href="/static/global/icon.png" />
+    <link rel="icon" sizes="512x512" href="/static/global/icon.png" >
 
     <!-- Global Styles -->
-    <link rel="stylesheet" href="/styles/global/global.css" />
-    <link rel="stylesheet" href="/styles/global/navbar.css" />
-    <link rel="stylesheet" href="/styles/global/footer.css" />
-    <link rel="stylesheet" href="/styles/global/hero.css" />
-    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" />
+    <link rel="stylesheet" href="/styles/global/global.css" >
+    <link rel="stylesheet" href="/styles/global/navbar.css" >
+    <link rel="stylesheet" href="/styles/global/footer.css" >
+    <link rel="stylesheet" href="/styles/global/hero.css" >
+    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" >
 
     <!-- Page Style -->
-    <link rel="stylesheet" href="/styles/portfolio/portfolio.css" />
-    <link rel="stylesheet" href="/styles/portfolio/hero.css" />
-    <link rel="stylesheet" href="/styles/portfolio/popup.css" />
-
-    <title>Keagan's Portfolio</title>
+    <link rel="stylesheet" href="/styles/portfolio/portfolio.css" >
+    <link rel="stylesheet" href="/styles/portfolio/hero.css" >
+    <link rel="stylesheet" href="/styles/portfolio/popup.css" >
   </head>
   <body>
     <!-- Header and Navigation -->
@@ -44,11 +51,11 @@
       <!-- Navigation Links -->
       <nav class="navlinks">
         <ul>
-          <li><a href="/index.html">Home</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/portfolio.html" class="active">Portfolio</a></li>
           <li><a href="/blog.html">Blog</a></li>
           <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/report.html">Report</a></li>
           <li><i class="bx bxs-bulb" id="theme"></i></li>
         </ul>
       </nav>
@@ -60,6 +67,7 @@
       <!-- Start of Hero section for about page -->
       <section class="hero">
         <div class="hero_container">
+          <!-- short description of my portfolio page in hero section, with link to github -->
           <div class="description fadeLeft delay_2">
             <h1>portfolio</h1>
             <h2>Take a look at some of my Projects and Hackathons</h2>
@@ -70,124 +78,166 @@
               >Visit Github</a
             >
           </div>
+          <!-- Image of portfolio section showing workdone on computer -->
           <figure class="fadeRight delay_2">
-            <img src="/static/portfolio/hero/hero.png" alt="" />
+            <img
+              src="/static/portfolio/hero/hero.png"
+              alt="Picture showing desktop setup, with coding on the screen"
+              >
           </figure>
         </div>
       </section>
       <!-- End hero section -->
 
+      <!-- Start of portfolio section cards container, showing all featured projects I have done -->
       <article>
-        <h2 class="section_title fadeUp">My Work</h2>
+        <h2 class="section_title fadeUp">My Projects</h2>
         <section class="portfolio_container">
+          <!-- portfolio card for data science hackathon -->
           <div class="portfolio_card moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio2.jpg" alt="" />
+              <img
+                src="/static/portfolio/portfolio/data_science.jpg"
+                alt="picture showing office of people doing work, use for data science project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">Data Science Hackathon31</h3>
               <div class="hover_container">
                 <span> Data Science </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
+          <!-- portfolio card for AI hackathon -->
           <div class="portfolio_card moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
+              <img
+                src="/static/portfolio/portfolio/ai_hackathon.jpg"
+                alt="picture showing AI machine hand with neural network, use for AI project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">AI Hackathon26</h3>
               <div class="hover_container">
                 <span> Artificial Intelligence </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
+          <!-- portfolio card for NS roll call system -->
           <div class="portfolio_card moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio3.png" alt="" />
+              <img
+                src="/static/portfolio/portfolio/roll_call.png"
+                alt="picture showing NS roll call system project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">NS Roll Call System</h3>
               <div class="hover_container">
                 <span> Automation </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
+          <!-- portfolio card for E commerce hackathon -->
           <div class="portfolio_card large moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio4.png" alt="" />
+              <img
+                src="/static/portfolio/portfolio/e_commerce.png"
+                alt="picture showing E commerce hackathon project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">E-Commerce Website Hackathon23</h3>
               <div class="hover_container">
                 <span> Web Development </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
+          <!-- portfolio card for NS duty planner system -->
           <div class="portfolio_card moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio5.png" alt="" />
+              <img
+                src="/static/portfolio/portfolio/duty_planner.png"
+                alt="picture showing NS duty planner system project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">NS Duty Planner System</h3>
               <div class="hover_container">
                 <span>Automation </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
+          <!-- portfolio card for Portfolio website version 1 -->
           <div class="portfolio_card moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio6.png" alt="" />
+              <img
+                src="/static/portfolio/portfolio/portfolio_v1.png"
+                alt="picture showing my first version of portfolio website project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">Portfolio Website V1</h3>
               <div class="hover_container">
                 <span> Web Development </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
+          <!-- portfolio card for Ai retail assistant -->
           <div class="portfolio_card large moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio7.jpg" alt="" />
+              <img
+                src="/static/portfolio/portfolio/ai_retail.jpg"
+                alt="picture showing robot hand sorting retail stocks, use for AI retail assistant project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">AI retail assistant</h3>
               <div class="hover_container">
                 <span> Artificial Intelligence </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
+          <!-- portfolio card for 2d platform game -->
           <div class="portfolio_card moveUp">
             <figure>
-              <img src="/static/portfolio/portfolio/portfolio8.png" alt="" />
+              <img
+                src="/static/portfolio/portfolio/platform_game.png"
+                alt="picture showing my 2d platform game project"
+                >
             </figure>
-            <figcaption>
+            <div class="portfolio_card_details">
               <h3 class="card_title">2D Platform Game</h3>
               <div class="hover_container">
                 <span> Game </span>
                 <span> Show Project </span>
               </div>
-            </figcaption>
+            </div>
           </div>
         </section>
       </article>
+      <!-- End of portfolio section cards container -->
 
+      <!-- Start of portfolio popup when portfolio card is clicked -->
       <aside class="modal" id="modal">
-        <header class="modal-header">
-          <button class="close-button">&times;</button>
+        <header class="modal_header">
+          <button class="close_button">&times;</button>
           <a class="back_link">back to portfolio</a>
         </header>
-        <section class="modal-body">
+        <section class="modal_body">
           <h2 class="title">Usable Query</h2>
           <figure>
-            <img src="/static/portfolio/portfolio/portfolio1.jpg" alt="" />
+            <img
+              src="/static/portfolio/portfolio/ai_hackathon.jpg"
+              alt="picture showing AI machine hand with neural network, use for AI project"
+              >
           </figure>
           <h3>About</h3>
           <p class="description">will be replaced with javascript</p>
@@ -200,7 +250,9 @@
           >
         </section>
       </aside>
+      <!-- Overlay of pop up to block out the external section of pop up so that user focus on pop up -->
       <aside id="overlay"></aside>
+      <!-- End of portfolio popup when portfolio card is clicked -->
     </main>
     <!-- End of main contents -->
 
@@ -299,5 +351,8 @@
 
     <!-- Page Scripts -->
     <script src="/scripts/portfolio/portfolio.js"></script>
+
+    <!-- Preset Theme -->
+    <script src="/scripts/global/presetTheme.js"></script>
   </body>
 </html>

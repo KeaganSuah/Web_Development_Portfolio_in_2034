@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
     <!-- Meta Data for the Main page, such as description and author -->
-    <meta name="keywords" content="lorem" />
-    <meta name="author" content="lorem" />
-    <meta name="description" content="lorem" />
+    <meta
+      name="keywords"
+      content="Keagan Suah, About Keagan, Keagan's background, Software Developer, Web Developer, AI Engineer, Keagan's journey, Professional Portfolio"
+      >
+    <meta name="author" content="Keagan Suah" >
+    <meta
+      name="description"
+      content="Learn more about Keagan Suah, a passionate Software Developer and AI Engineer, and explore his journey, background, and professional experiences."
+      >
+
+    <!-- Page Title for about me page -->
+    <title>About Keagan Suah</title>
 
     <!-- Box Icons Import -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
-    />
+      >
 
     <!-- Web Icon -->
-    <link rel="icon" sizes="512x512" href="/static/global/icon.png" />
+    <link rel="icon" sizes="512x512" href="/static/global/icon.png" >
 
     <!-- Global Styles -->
-    <link rel="stylesheet" href="/styles/global/global.css" />
-    <link rel="stylesheet" href="/styles/global/navbar.css" />
-    <link rel="stylesheet" href="/styles/global/footer.css" />
-    <link rel="stylesheet" href="/styles/global/hero.css" />
-    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" />
+    <link rel="stylesheet" href="/styles/global/global.css" >
+    <link rel="stylesheet" href="/styles/global/navbar.css" >
+    <link rel="stylesheet" href="/styles/global/footer.css" >
+    <link rel="stylesheet" href="/styles/global/hero.css" >
+    <link rel="stylesheet" href="/styles/global/scrollAnimation.css" >
 
     <!-- Page Styles -->
-    <link rel="stylesheet" href="/styles/about/journey.css" />
-    <link rel="stylesheet" href="/styles/about/service.css" />
-    <link rel="stylesheet" href="/styles/about/skills.css" />
-
-    <title>About Keagan</title>
+    <link rel="stylesheet" href="/styles/about/journey.css" >
+    <link rel="stylesheet" href="/styles/about/service.css" >
+    <link rel="stylesheet" href="/styles/about/skills.css" >
   </head>
   <body>
     <!-- Header and Navigation -->
@@ -44,11 +51,11 @@
       <!-- Navigation Links -->
       <nav class="navlinks">
         <ul>
-          <li><a href="/index.html">Home</a></li>
           <li><a href="/about.html" class="active">About</a></li>
           <li><a href="/portfolio.html">Portfolio</a></li>
           <li><a href="/blog.html">Blog</a></li>
           <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/report.html">Report</a></li>
           <li><i class="bx bxs-bulb" id="theme"></i></li>
         </ul>
       </nav>
@@ -60,6 +67,7 @@
       <!-- Start of Hero section for about page -->
       <section class="hero">
         <div class="hero_container">
+          <!-- Short description about me, Keagan Suah in the hero section -->
           <div class="description fadeLeft delay_2">
             <h1>about</h1>
             <h2>I'm a passionate AI/ML Engineer from Sunny Singapore</h2>
@@ -71,8 +79,12 @@
               tackling challenging problems and driving innovation.
             </p>
           </div>
+          <!-- Image of Keagan Suah in hero section -->
           <figure class="fadeRight delay_2">
-            <img src="/static/about/hero/hero.PNG" alt="" />
+            <img
+              src="/static/about/hero/myFace.PNG"
+              alt="picture of Keagan Suah taken professionally without background"
+              >
           </figure>
         </div>
       </section>
@@ -84,153 +96,158 @@
         <section class="journey_container">
           <!-- unorder list contain my journey, which includes both my education and experience -->
           <ul>
+            <!-- Work experience in apple as senior ai ml engineer -->
             <li class="journey_card fade">
               <h3>Senior AI/ML Engineer</h3>
               <h4>Apple</h4>
               <p>
-                As a Senior AI/ML Engineer at Apple, I lead the development and
-                implementation of sophisticated machine learning and artificial
-                intelligence solutions that enhance the company’s technology
-                offerings
+                As a Senior AI/ML Engineer at Apple, I led the development and
+                implementation of advanced AI/ML solutions, enhancing Apple's
+                technology.
                 <span class="read_more">
-                  In this role, I am responsible for driving AI innovation,
-                  delivering high-impact solutions, and maintaining Apple’s
-                  position at the forefront of technology.</span
+                  My role involved driving AI innovation and delivering
+                  high-impact solutions, ensuring Apple remains at the forefront
+                  of technology.</span
                 >
               </p>
               <span class="status">Read More</span>
               <figure class="company_logo">
-                <!-- Image from https://www.iconfinder.com/icons/1314162/apple_company_ios_logo_icon -->
-                <img src="/static/about/journey/apple.png" alt="" />
+                <img
+                  src="/static/about/journey/apple.png"
+                  alt="image of apple logo"
+                  >
               </figure>
               <span class="date">Apr 32 - Present</span>
             </li>
+            <!-- Work experience in apple as ai ml engineer -->
             <li class="journey_card fade">
               <h3>AI/ML Engineer</h3>
               <h4>Apple</h4>
               <p>
-                In my role as an AI/ML Engineer at Apple, I am at the forefront
-                of developing and deploying innovative machine learning
-                solutions that drive advancements in Apple’s technology
-                ecosystem.
+                As an AI/ML Engineer at Apple, I played a key role in developing
+                machine learning solutions that advance Apple's tech ecosystem.
                 <span class="read_more">
-                  This position has provided me with the opportunity to work on
-                  groundbreaking AI projects, contribute to Apple’s innovation
-                  strategy, and drive impactful technological
+                  I worked on groundbreaking projects, contributing to Apple’s
+                  innovation strategy and driving impactful technological
                   advancements.</span
                 >
               </p>
               <span class="status">Read More</span>
               <figure class="company_logo">
-                <!-- Image from https://www.iconfinder.com/icons/1314162/apple_company_ios_logo_icon -->
-                <img src="/static/about/journey/apple.png" alt="" />
+                <img
+                  src="/static/about/journey/apple.png"
+                  alt="Image of apple logo"
+                  >
               </figure>
               <span class="date">Jun 30 - Apr 32</span>
             </li>
+            <!-- Education experience in uol as master student -->
             <li class="journey_card fade">
               <h3>Master of Science in Computer Science</h3>
               <h4>University of London</h4>
               <p>
-                During my Master’s program in Computer Science at the University
-                of London, I deepened my understanding of advanced computing
-                concepts and specialized in areas such as machine learning, data
-                science, and software engineering
+                During my Master’s program in Computer Science, I specialized in
+                machine learning, data science, and software engineering.
                 <span class="read_more">
-                  The program provided me with a strong foundation in computer
-                  science, equipped me with practical skills, and fostered a
-                  deep appreciation for the role of technology in solving
-                  real-world problems.</span
+                  The program equipped me with practical skills and a deep
+                  appreciation for technology’s role in solving real-world
+                  problems.</span
                 >
               </p>
               <span class="status">Read More</span>
               <figure class="company_logo">
-                <!-- image from https://sco.wikipedia.org/wiki/File:University_of_London.svg -->
                 <img
                   src="/static/about/journey/University_of_London.png"
-                  alt=""
-                />
+                  alt="Image of University of london logo"
+                  >
               </figure>
               <span class="date">Jan 29 - Jan 30</span>
             </li>
+            <!-- Work experience in shopee as data science junior -->
             <li class="journey_card fade">
               <h3>Data Science Junior</h3>
               <h4>Shopee</h4>
               <p>
-                As a Data Science Junior at Shopee, I played a pivotal role in
-                advancing the company’s data-driven strategies
+                As a Data Science Junior at Shopee, I contributed to the
+                company’s data-driven strategies and high-impact projects.
                 <span class="read_more">
-                  My tenure at Shopee allowed me to deepen my expertise in data
-                  science, contribute to high-impact projects, and work with a
-                  diverse team of professionals in a dynamic, growth-oriented
-                  environment.</span
+                  My tenure deepened my expertise in data science, and I worked
+                  in a dynamic, growth-oriented environment with diverse
+                  professionals.</span
                 >
               </p>
               <span class="status">Read More</span>
               <figure class="company_logo">
-                <!-- Image from https://www.pngwing.com/en/free-png-avhrb -->
-                <img src="/static/about/journey/shopee.png" alt="" />
+                <img
+                  src="/static/about/journey/shopee.png"
+                  alt="Image of shopee logo"
+                  >
               </figure>
               <span class="date">Oct 26 - Jan 29</span>
             </li>
+            <!-- Work experience in apple as seasonal specialist -->
             <li class="journey_card fade">
               <h3>Seasonal Specialist</h3>
               <h4>Apple</h4>
               <p>
-                As a Seasonal Specialist at Apple, I had the opportunity to
-                engage directly with customers, providing personalized solutions
-                and enhancing their overall experience with Apple products.
+                As a Seasonal Specialist at Apple, I engaged directly with
+                customers, providing personalised solutions and enhancing their
+                experience.
                 <span class="read_more">
                   My role involved understanding customer needs, offering expert
-                  advice, and delivering exceptional service during high-traffic
-                  seasons.</span
+                  advice, and delivering exceptional service during
+                  high-traffic.</span
                 >
               </p>
               <span class="status">Read More</span>
               <figure class="company_logo">
-                <!-- Image from https://www.iconfinder.com/icons/1314162/apple_company_ios_logo_icon -->
-                <img src="/static/about/journey/apple.png" alt="" />
+                <img
+                  src="/static/about/journey/apple.png"
+                  alt="Image of apple logo"
+                  >
               </figure>
               <span class="date">Aug 24 - Feb 25</span>
             </li>
+            <!-- Education experience in uol as bachalor student -->
             <li class="journey_card fade">
               <h3>Bachelor of Computer Science</h3>
               <h4>University of London</h4>
               <p>
-                During my Bachelor of Computer Science program at the University
-                of London, I developed a solid foundation in computer science
-                principles and honed my skills in software development,
-                algorithms, and data structures.
-                <span class="read_more"
-                  >The curriculum offered a balance of theoretical knowledge and
+                During my Bachelor’s program, I developed a strong foundation in
+                computer science principles, focusing on software development.
+                <span class="read_more">
+                  The curriculum offered a balance of theoretical knowledge and
                   practical experience, enabling me to work on real-world
-                  projects and collaborate with diverse teams.</span
+                  projects.</span
                 >
               </p>
               <span class="status">Read More</span>
               <figure class="company_logo">
-                <!-- image from https://sco.wikipedia.org/wiki/File:University_of_London.svg -->
                 <img
                   src="/static/about/journey/University_of_London.png"
-                  alt=""
-                />
+                  alt="Image of university of london logo"
+                  >
               </figure>
               <span class="date">Oct 23 - Oct 26</span>
             </li>
+            <!-- Work experience in SAF as fullstack developer -->
             <li class="journey_card fade">
               <h3>FullStack Developer</h3>
               <h4>Singapore Armed Forces</h4>
               <p>
-                Digitalised the battalion by providing two automated systems
-                through a website that eliminates human error.
-                <span class="read_more"
-                  >Created and administrated the overall program and server of
-                  the automated systems.</span
+                Digitalized the battalion by creating two automated systems that
+                eliminated human error and improved operational efficiency.
+                <span class="read_more">
+                  I managed the entire program and server, ensuring seamless
+                  operation and administration of the systems.</span
                 >
               </p>
               <span class="status">Read More</span>
               <figure class="company_logo">
-                <!-- image from https://en.wikipedia.org/wiki/Singapore_Army -->
-                <img src="/static/about/journey/singapore_army.png" alt="" />
+                <img
+                  src="/static/about/journey/singapore_army.png"
+                  alt="Image of singapore armed forces logo"
+                  >
               </figure>
               <span class="date">Jun 21 - Apr 23</span>
             </li>
@@ -242,77 +259,110 @@
       <!-- My list of programming lanuages skills -->
       <article>
         <h2 class="section_title fadeUp">My Skills</h2>
-        <section class="scroll_container fade">
+        <div class="scroll_container fade">
           <!-- Unorder list to contain all my skillset, such as all programming languages and frameworks -->
           <ul class="skills_container scroller_inner">
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/aws.png" alt="" />
+                <img
+                  src="/static/about/skills/aws.png"
+                  alt="Image of AWS logo"
+                  >
+                <figcaption>AWS</figcaption>
               </figure>
-              <figcaption>AWS</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/c-.png" alt="" />
+                <img
+                  src="/static/about/skills/c-.png"
+                  alt="Image of C++ programming language logo"
+                  >
+                <figcaption>C++</figcaption>
               </figure>
-              <figcaption>C++</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/c-sharp.png" alt="" />
+                <img
+                  src="/static/about/skills/c-sharp.png"
+                  alt="Image of C-sharp programming language logo"
+                  >
+                <figcaption>C#</figcaption>
               </figure>
-              <figcaption>C#</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/css-3.png" alt="" />
+                <img
+                  src="/static/about/skills/css-3.png"
+                  alt="Image of CSS programming language logo"
+                  >
+                <figcaption>CSS</figcaption>
               </figure>
-              <figcaption>CSS</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/html.png" alt="" />
+                <img
+                  src="/static/about/skills/html.png"
+                  alt="Image of HTML programming language logo"
+                  >
+                <figcaption>HTML</figcaption>
               </figure>
-              <figcaption>HTML</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/javascript.png" alt="" />
+                <img
+                  src="/static/about/skills/javascript.png"
+                  alt="Image of Javascript programming language logo"
+                  >
+                <figcaption>Javascript</figcaption>
               </figure>
-              <figcaption>Javascript</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/python.png" alt="" />
+                <img
+                  src="/static/about/skills/python.png"
+                  alt="Image of Python programming language logo"
+                  >
+                <figcaption>Python</figcaption>
               </figure>
-              <figcaption>Python</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/mysql.png" alt="" />
+                <img
+                  src="/static/about/skills/mysql.png"
+                  alt="Image of MySQL database logo"
+                  >
+                <figcaption>MySQL</figcaption>
               </figure>
-              <figcaption>MySQL</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/react.png" alt="" />
+                <img
+                  src="/static/about/skills/react.png"
+                  alt="Image of React framework logo"
+                  >
+                <figcaption>React</figcaption>
               </figure>
-              <figcaption>React</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/swift.png" alt="" />
+                <img
+                  src="/static/about/skills/swift.png"
+                  alt="Image of Swift programming language logo"
+                  >
+                <figcaption>Swift</figcaption>
               </figure>
-              <figcaption>Swift</figcaption>
             </li>
             <li class="skill_card">
               <figure>
-                <img src="/static/about/skills/ruby.png" alt="" />
+                <img
+                  src="/static/about/skills/ruby.png"
+                  alt="Image of Ruby programming language logo"
+                  >
+                <figcaption>Ruby</figcaption>
               </figure>
-              <figcaption>Ruby</figcaption>
             </li>
           </ul>
-        </section>
+        </div>
       </article>
       <!-- End of list of programming language -->
 
@@ -320,6 +370,7 @@
       <article>
         <h2 class="section_title fadeUp">My Services</h2>
         <section class="service_container">
+          <!-- service card for web development -->
           <a href="/contact.html" class="service_card moveUp">
             <i class="bx bx-globe"></i>
             <h3>Web Development</h3>
@@ -328,6 +379,7 @@
               look on the screen to how they work behind the scenes.
             </p>
           </a>
+          <!-- service card for data visualisation -->
           <a href="/contact.html" class="service_card moveUp">
             <i class="bx bxs-bar-chart-alt-2"></i>
             <h3>Data Visualisation</h3>
@@ -336,6 +388,7 @@
               help people understand and make decisions.
             </p>
           </a>
+          <!-- service card for cloud migration  -->
           <a href="/contact.html" class="service_card moveUp">
             <i class="bx bxs-cloud"></i>
             <h3>Cloud Migration</h3>
@@ -344,6 +397,7 @@
               runs well and doesn't cost too much.
             </p>
           </a>
+          <!-- service card for software architecture -->
           <a href="/contact.html" class="service_card moveUp">
             <i class="bx bxs-cog"></i>
             <h3>Software Architecture</h3>
@@ -352,14 +406,16 @@
               use, and grow as needed.
             </p>
           </a>
+          <!-- service card for performance optimisation -->
           <a href="/contact.html" class="service_card moveUp">
             <i class="bx bxs-bulb"></i>
-            <h3>Performance Optimization</h3>
+            <h3>Performance Optimisation</h3>
             <p>
               Making sure websites and apps run fast and can handle lots of
               users without crashing.
             </p>
           </a>
+          <!-- service card for machine learning -->
           <a href="/contact.html" class="service_card moveUp">
             <i class="bx bxs-brain"></i>
             <h3>Machine Learning</h3>
@@ -471,5 +527,8 @@
     <script src="/scripts/about/service.js"></script>
     <script src="/scripts/about/skills.js"></script>
     <script src="/scripts/about/journey.js"></script>
+
+    <!-- Preset Theme -->
+    <script src="/scripts/global/presetTheme.js"></script>
   </body>
 </html>

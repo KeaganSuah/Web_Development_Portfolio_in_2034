@@ -236,3 +236,10 @@
     height: 6rem;
   }
 }
+
+/* adjust for when using phone */
+@media (max-width: 400px) {
+  .read_more_more {
+    height: 9rem;
+  }
+}

@@ -83,28 +83,45 @@
 .right_container button {
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
-  text-align: center;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 35%;
   height: 55px;
-  font-weight: 700;
-  font-size: var(--font-size-l);
-  background: rgb(var(--gray-800));
-  border: none;
-  box-shadow: 0px 0px 3px 1.2px rgb(var(--gray-600));
-  color: rgb(var(--gray-400));
-  text-transform: capitalize;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  transition: 0.5s ease;
-  margin: 0.5rem auto;
+  border: 2px solid rgb(var(--gray-600));
+  background: rgb(var(--gray-900));
+  font-weight: 400;
+  font-size: var(--font-size-xl);
+  box-shadow: 0px 3px 7px 1.2px rgb(var(--gray-400), 0.2);
+  color: rgb(var(--gray-300));
+  border-radius: 0.8rem;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.right_container button::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  background: rgb(var(--gray-700), 0.5);
+  z-index: -1;
+  transition: 0.5s;
 }
 
 /* button when hovered and focused */
 .right_container button:hover,
 .right_container button:focus {
   color: rgb(var(--gray-100));
-  background: rgb(var(--gray-700));
+}
+
+.right_container button:hover::before,
+.right_container button:focus::before {
+  width: 100%;
 }
 
 /* for tablet and small screens */

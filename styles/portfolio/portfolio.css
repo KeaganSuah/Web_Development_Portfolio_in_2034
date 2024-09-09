@@ -293,3 +293,10 @@
     top: 90%;
   }
 }
+
+/* media query for small phone devices */
+@media (max-width: 500px) {
+  .portfolio_card {
+    height: 30vh;
+  }
+}

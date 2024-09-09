@@ -1,0 +1,66 @@
+.report_introduction {
+  margin: 5rem 0;
+}
+
+.report_introduction h1 {
+  color: rgb(var(--gray-200));
+  font-size: var(--font-size-7xl);
+}
+
+.report_introduction h2 {
+  color: rgb(var(--gray-400));
+  font-size: var(--font-size-3xl);
+  font-weight: 300;
+}
+
+.report_question {
+  margin: 5rem 0;
+  padding: 0 7%;
+}
+
+.report_question h3 {
+  color: rgb(var(--gray-200));
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-xl);
+  font-weight: 500;
+  margin: 5rem 0 3rem;
+}
+
+.report_question p {
+  color: rgb(var(--gray-300));
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-l);
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.report_question h4 {
+  color: rgb(var(--gray-300));
+  font-size: var(--font-size-2xl);
+  font-weight: 400;
+  padding: 2rem 0 1rem;
+}
+
+.report_question ul {
+  margin-left: 2rem;
+  color: rgb(var(--gray-300));
+  font-size: var(--font-size-l);
+}
+
+.report_question a {
+  text-decoration: none;
+  color: rgb(var(--blue-300));
+  font-size: var(--font-size-l);
+}
+
+.report_question figure {
+  width: 50%;
+  overflow: hidden;
+}
+
+.report_question figure img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}

@@ -125,3 +125,10 @@
     transition-delay: 0s;
   }
 }
+
+/* for phone devices and smaller */
+@media (max-width: 500px) {
+  .service_card {
+    height: 30vh;
+  }
+}

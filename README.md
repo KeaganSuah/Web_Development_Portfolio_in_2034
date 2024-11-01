@@ -30,9 +30,15 @@ To complete this project, I leveraged a variety of web development technologies 
 ## Conclusion
 This portfolio website project allowed me to integrate modern web design trends while showcasing my skills and experiences in a visually compelling way. The use of animations, layouts, and styling techniques helped create a forward-looking portfolio that effectively communicates my personal brand.
 
-## Technologies
+## Technologies and Skills Used
 - HTML/CSS
 - JavaScript
+- Frontend Development
+- Responsive Web Design
+- Animation Techniques (Parallax Scrolling, Scroll Reveal)
+- Visual Design (Gradient and Glow Effects)
+- Version Control (Git/GitHub)
+
 
 ## Contact
 For inquiries or feedback, please contact me at suahkeagan@gmail.com
